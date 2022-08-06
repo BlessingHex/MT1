@@ -1,0 +1,10 @@
+^C:\USERS\THEBL\SOURCE\REPOS\MT1\BUILD\CMAKEFILES\915CFB41BB5686946ED231F65953B508\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\cmake-3.23.2-windows-x86_64\bin\cmake.exe" -SC:/Users/THEBL/source/repos/MT1/src -BC:/Users/THEBL/source/repos/MT1/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/THEBL/source/repos/MT1/build/HEXGCS.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
