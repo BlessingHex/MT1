@@ -12,20 +12,27 @@ add_executable(HEXGCS HEXmain.cpp)
 
 # Specify include directories
 include_directories(
-  ${CMAKE_SOURCE_DIR}/src/install/include
+  ${CMAKE_SOURCE_DIR}/install/include
 )
 
 # Platform specific library linking
 if (WIN32)
+    
+    message("Window mavsdk find")    
+
     # Specify your app's executable name and a list of linked libraries
     target_link_libraries(HEXGCS
       # ... any other linked libraries
       ${CMAKE_SOURCE_DIR}/install/lib/mavsdk.lib
+      #${CMAKE_SOURCE_DIR}/install/lib/mavsdk.dll
     )
 
 endif(WIN32)
 
 if (UNIX)
+
+    message("Unix mavsdk find")
+
     # Specify your app's executable name and a list of linked libraries
     target_link_libraries(HEXGCS
         # ... any other linked libraries

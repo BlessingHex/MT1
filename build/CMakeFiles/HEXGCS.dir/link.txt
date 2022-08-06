@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/HEXGCS.dir/HEXmain.cpp.o -o HEXGCS  -Wl,-rpath,/home/blessing/MT1/src/install/lib /home/blessing/MT1/src/install/lib/libmavsdk.so 
