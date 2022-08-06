@@ -12,16 +12,16 @@ add_executable(HEXGCS HEXmain.cpp)
 
 # Specify library directories
 link_directories(
-  ${CMAKE_SOURCE_DIR}/install/lib
+  ${CMAKE_SOURCE_DIR}/src/install/lib
   )
 
 # Specify include directories
 include_directories(
-  ${CMAKE_SOURCE_DIR}/install/include
+  ${CMAKE_SOURCE_DIR}/src/install/include
   )
 
 # Specify your app's executable name and a list of linked libraries
 target_link_libraries(HEXGCS
-    mavsdk
     # ... any other linked libraries
+    ${CMAKE_SOURCE_DIR}/install/lib/libmavsdk.so
 )

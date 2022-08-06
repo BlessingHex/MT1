@@ -92,6 +92,7 @@ HEXGCS_EXTERNAL_OBJECTS =
 
 HEXGCS: CMakeFiles/HEXGCS.dir/HEXmain.cpp.o
 HEXGCS: CMakeFiles/HEXGCS.dir/build.make
+HEXGCS: /home/blessing/MT1/src/install/lib/libmavsdk.so
 HEXGCS: CMakeFiles/HEXGCS.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/blessing/MT1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable HEXGCS"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/HEXGCS.dir/link.txt --verbose=$(VERBOSE)
