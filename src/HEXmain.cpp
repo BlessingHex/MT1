@@ -5,6 +5,7 @@
 // The mavsdk.lib that i copied over is in release mode, I need to get one that is in debug mode
 
 int main(int argc, char** argv) {
+    std::cout << "Hello World!" << " Created!" << std::endl;
     mavsdk::Mavsdk mavsdk;
 
     mavsdk::ConnectionResult connection_result = mavsdk.add_any_connection("localhost");
